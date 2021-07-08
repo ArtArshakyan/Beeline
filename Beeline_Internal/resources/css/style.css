@@ -1,0 +1,667 @@
+/*
+==================================================
+#FONT
+#BASIC TYPOGRAPHY
+#PRE LOADER
+#HEADER
+#LOGIN PAGE
+#HOME PAGE
+#RESPONSIVE
+==================================================
+*/
+
+/*============================*/
+/* FONT */
+/*============================*/
+
+/*============================*/
+/* FONT END */
+/*============================*/
+
+/*============================*/
+/* BASIC TYPOGRAPHY */
+/*============================*/
+body, html {
+    font-family: 'Montserrat-Regular', 'Helvetica', 'Arial', 'sans-serif';
+    padding:0;
+    margin:0;
+}
+body.home{
+    padding-top: 118px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    -o-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+}
+a:focus,a:hover {
+    outline: none;
+    text-decoration: none;
+}
+svg {
+    -o-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+}
+path {
+    -o-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+.row {
+    margin:0!important;
+}
+/*.col{*/
+    /*padding: 0!important;*/
+/*}*/
+.overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+}
+.section {
+    position: relative;
+    z-index: 88;
+    max-width: 1645px;
+    width: 90%;
+    margin: auto;
+    float: none;
+}
+/*============================*/
+/* BASIC TYPOGRAPHY END */
+/*============================*/
+
+
+/*============================*/
+/* PRE LOADER */
+/*============================*/
+#preloader{
+    width: 100%;
+    height:100%;
+    position: fixed;
+    overflow: hidden;
+    top:0;
+    left:0;
+    z-index: 9999;
+    background-color: rgb(255, 255, 255);
+}
+#preloader img{
+    width:100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+/*============================*/
+/* PRE LOADER END */
+/*============================*/
+
+/*============================*/
+/* HEADER */
+/*============================*/
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 0px 10px -3px #000;
+    -moz-box-shadow: 0px 0px 10px -3px #000;
+    box-shadow: 0px 0px 10px -3px #000;
+}
+#header:after,
+#header .section:after,
+.main-header:after,
+.info-header:after,
+.info-header .section:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#header > .section{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.info-header {
+    background-color: rgb(44, 56, 67);
+    padding: 5px 0px;
+}
+.info-header > .section{
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.main-header{
+    margin-top: 15px;
+}
+.log-out a{
+    font-size: 14px;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+.log-out a:hover{
+    background: rgba(0, 0, 0, 0.40);
+}
+.main-account{
+    margin-right: 50px;
+}
+/* Main Logo */
+.main-logo{
+    width: 45px;
+    height: 45px;
+    margin-top: 5px;
+    float: left;
+}
+.main-logo svg{
+    width:100%;
+    height: 100%;
+}
+
+/* Main Account and Number */
+.main-account,
+.user-name,
+.user-tabel{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.user-name,
+.user-name i,
+.user-tabel > span{
+    margin-right: 5px;
+}
+.user-name *,
+.user-tabel *{
+    color: #ffffff;
+    font-size: 14px;
+}
+.user-name i{
+    color: #ffffff;
+    font-size: 24px;
+}
+
+/* Main Menu */
+.main-menu{
+    float: right;
+    margin-right: 50px;
+}
+
+.sub-menu-parent {
+    position: relative;
+}
+.sub-menu {
+    visibility: hidden; /* hides sub-menu */
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-20px);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+.sub-menu-parent:focus .sub-menu,
+.sub-menu-parent:focus-within .sub-menu,
+.sub-menu-parent:hover .sub-menu {
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    outline: 0;
+    transform: translateY(0px);
+    transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+.sub-menu-parent:focus{
+    outline: 0;
+}
+.main-menu .sub-menu-parent > a {
+    font-size: 16px;
+    color: #2c3843;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+.main-menu .sub-menu-parent .sub-menu a{
+    font-size: 16px;
+    color: #2c3843;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+.main-menu a:hover,
+.main-menu a.active{
+    color: #000;
+    background-color: rgb(242, 243, 243);
+}
+.main-menu ul,
+.main-menu ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-menu > ul {
+    text-align: center;
+}
+.main-menu > ul > li {
+    display: inline-block;
+}
+.main-menu > ul > li:first-child {
+    border-left: none;
+    margin-top: 7px;
+    padding-bottom: 22px;
+}
+.sub-menu {
+    background: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 7px 8px -2px rgb(150, 150, 150);
+    -moz-box-shadow: 0 7px 8px -2px rgb(150, 150, 150);
+    box-shadow: 0 7px 8px -2px rgb(150, 150, 150);
+    width: 200px;
+    text-align: left;
+}
+
+/* Main Sum */
+.main-sum{
+    float: right;
+}
+.sum-number a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 15px 30px;
+    font-size: 22px;
+    color: #2c3843;
+    line-height: 23px;
+    background-color: rgb(242, 243, 243);
+    border-radius: 50px;
+}
+.sum-number a:before, .sum-number a:after {
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+.sum-number a:before, .sum-number a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50%;
+    background-color: #ffc84e;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+.sum-number a:before {
+    left: -35px;
+    -webkit-transform: skewX(42deg);
+    -moz-transform: skewX(42deg);
+    -ms-transform: skewX(42deg);
+    -o-transform: skewX(42deg);
+    transform: skewX(42deg);
+}
+.sum-number a:after {
+    right: -35px;
+    -webkit-transform: skewX(46deg);
+    -moz-transform: skewX(46deg);
+    -ms-transform: skewX(46deg);
+    -o-transform: skewX(46deg);
+    transform: skewX(46deg);
+}
+.sum-number a:hover:before, .sum-number a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+.sum-number *{
+    position: relative;
+    z-index: 99;
+}
+/*============================*/
+/* HEADER END */
+/*============================*/
+
+/*============================*/
+/* COVER SECTION */
+/*============================*/
+
+/*============================*/
+/* COVER SECTION END */
+/*============================*/
+.cover-section{
+    position: relative;
+    height: 450px;
+    background-image: url("../images/15487616090936.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.cover-content{
+    background-image: url("../images/5-2-money-png-picture.png");
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+    background-attachment: fixed;
+    background-size: 25%;
+    overflow: hidden;
+}
+.bee-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/piqdyx4i9.png");
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-attachment: fixed;
+    background-position: 5% 40%;
+}
+
+.cover-content,.cover-content > .section{
+    height: 100%;
+}
+.cover-content > .section{
+    display: table;
+}
+.cover-content .title{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.cover-content .title h2{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #2c3843;
+    font-weight: 700;
+}
+.cover-content .title p{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+/*============================*/
+/* TAB SECTION */
+/*============================*/
+
+#tab-block .tab-section{
+    display: block;
+}
+#tab-block .tab-menu-items {
+    background-color: rgb(44, 56, 67);
+}
+#tab-block .tab-menu-items > .section{
+    padding: 0;
+}
+#tab-block .tabs{
+    background-color: transparent;
+}
+.tab-content{
+    display: block;
+    clear: both;
+}
+.tab-content:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/*============================*/
+/* TAB SECTION END */
+/*============================*/
+
+/*============================*/
+/* LOGIN PAGE */
+/*============================*/
+
+#login{
+    background-image: url(../images/texture.png);
+    background-repeat: repeat;
+    background-color: rgb(255, 213, 78);
+}
+#login > div,
+#login > div > div{
+    height:100%;
+}
+.all-image{
+    background-image: url(../images/sprite.png);
+    background-repeat: no-repeat;
+}
+.logo-in-login{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 35px;
+    position: absolute;
+    top: -75px;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.logo-in-login svg{
+    width: 100%;
+    height: 100%;
+}
+.login-form{
+    max-width: 520px;
+    width: 100%;
+    position: absolute;
+    left: 50%!important;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    padding: 140px 30px 140px!important;
+    border-radius: 5px;
+}
+.login-form-title{
+    position: absolute;
+    top: 100px;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+.login-form-title h2{
+    text-transform: uppercase;
+    color: #2c3843;
+    font-size: 28px;
+    text-align: center;
+}
+#login form button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 65px;
+    margin: auto;
+}
+#login form button.btn{
+    color: #2c3843;
+    background-color: #ffb300;
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+#login .forget-pass{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 25px;
+    margin: auto;
+    font-size: 14px;
+    color: #9e9e9e;
+}
+#login .forget-pass:hover{
+    color: #ffb300;
+}
+#login .input-field input[type=password]:focus + label,
+#login .input-field input[type=text]:focus + label,
+#login .input-field input.valid[type=password] + label,
+#login .input-field input.valid[type=text] + label{
+    color: #ffb300!important;
+}
+#login .input-field input[type=password]:focus,
+#login .input-field input[type=text]:focus,
+#login .input-field input.valid[type=password],
+#login .input-field input.valid[type=text]{
+    border-bottom: 1px solid #ffb300!important;
+    box-shadow: 0 1px 0 0 #ffb300!important;
+}
+#login .input-field input{
+    color: #2c3843;
+}
+#login [type="checkbox"].filled-in:not(:checked)+span:not(.lever):after{
+    height: 18px;
+    width: 18px;
+    border-color: #9e9e9e;
+}
+#login [type="checkbox"].filled-in:checked+span:not(.lever):after{
+    height: 18px;
+    width: 18px;
+    border-color: #ffb300 ;
+    background-color: #ffb300 ;
+}
+#login [type="checkbox"].filled-in:checked+span:not(.lever):before{
+    height: 11px;
+}
+.remember-me{
+    padding-left: 12px;
+}
+.remember-me span{
+    height: 18px!important;
+    line-height: 18px!important;
+    padding-left: 30px!important;
+    font-size: 14px!important;
+    color: #9e9e9e;
+}
+#login .modal-overlay{
+    top: 0;
+}
+#login #modal1{
+    max-width: 500px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    top:0!important;
+    bottom: 0;
+}
+#login #modal1 > div{
+    height:auto;
+}
+#login .modal-close{
+    color: #9e9e9e;
+}
+#login .modal-close:hover{
+    color: #ffb300;
+}
+/*============================*/
+/* LOGIN PAGE END */
+/*============================*/
+
+
+
+/*============================*/
+/* RESPONSIVE END */
+/*============================*/
+
+@media(max-width: 560px){
+    .logo-in-login{
+        width: 130px;
+        height: 130px;
+        top: -60px;
+    }
+    .login-form-title h2{
+        font-size: 24px;
+    }
+}
+@media(max-width: 420px){
+    #login form{
+        padding: 0;
+    }
+    .login-form{
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+}
+
+@media(max-height: 640px){
+    .logo-in-login{
+        width: 100px;
+        height: 100px;
+        top: -55px;
+    }
+    .login-form-title{
+        top: 55px;
+    }
+    .login-form-title h2{
+        font-size: 18px;
+    }
+    .login-form{
+        padding-top: 80px!important;
+        padding-bottom: 110px!important;
+    }
+    .login-form .input-field{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .login-form .input-field input{
+        height: 35px;
+    }
+    .login-form .input-field>label{
+        -webkit-transform: translateY(7px);
+        -moz-transform: translateY(7px);
+        -ms-transform: translateY(7px);
+        -o-transform: translateY(7px);
+        transform: translateY(7px);
+    }
+}
+/*============================*/
+/* RESPONSIVE END */
+/*============================*/
